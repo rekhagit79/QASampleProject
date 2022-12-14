@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="20.021">
+    <testcase classname="Validate Login functionality" name="Validate with valid username and valid password with excel data" time="13.129">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='leftPanel']//a[contains(text(),'Log Out')]&quot;}&#10;  (Session info: chrome=108.0.5359.99)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1706bc94df85581faa55f17b20a8b654, findElement {using=xpath, value=//*[@id='leftPanel']//a[contains(text(),'Log Out')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\baiju\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55853/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1706bc94df85581faa55f17b20a8b654" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given data is loaded for scenario "TC_001"..................................passed
+And user has launched the browser...........................................passed
+When user opens the application url.........................................passed
+And user enters the userid and password.....................................passed
+And user clicks the login button............................................passed
+Then user is successfully logged into application with title title..........passed
+And user is logged out......................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='leftPanel']//a[contains(text(),'Log Out')]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1706bc94df85581faa55f17b20a8b654, findElement {using=xpath, value=//*[@id='leftPanel']//a[contains(text(),'Log Out')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\baiju\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55853/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1706bc94df85581faa55f17b20a8b654
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at pages.LoginPage.logoutAppln(LoginPage.java:98)
+	at stepDefinition.LoginSteps.user_is_logged_out(LoginSteps.java:45)
+	at ✽.user is logged out(file:///C:/eclipse_selenium/BDDSample/src/test/resources/features/login.feature:25)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Login functionality" name="Validate with valid username and valid password with excel data 2" time="5.31">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='leftPanel']//a[contains(text(),'Log Out')]&quot;}&#10;  (Session info: chrome=108.0.5359.99)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1706bc94df85581faa55f17b20a8b654, findElement {using=xpath, value=//*[@id='leftPanel']//a[contains(text(),'Log Out')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\baiju\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55853/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1706bc94df85581faa55f17b20a8b654" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given data is loaded for scenario "TC_002"..................................passed
+And user has launched the browser...........................................passed
+When user opens the application url.........................................passed
+And user enters the userid and password.....................................passed
+And user clicks the login button............................................passed
+Then user is successfully logged into application with title title..........passed
+And user is logged out......................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='leftPanel']//a[contains(text(),'Log Out')]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1706bc94df85581faa55f17b20a8b654, findElement {using=xpath, value=//*[@id='leftPanel']//a[contains(text(),'Log Out')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\baiju\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55853/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1706bc94df85581faa55f17b20a8b654
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at pages.LoginPage.logoutAppln(LoginPage.java:98)
+	at stepDefinition.LoginSteps.user_is_logged_out(LoginSteps.java:45)
+	at ✽.user is logged out(file:///C:/eclipse_selenium/BDDSample/src/test/resources/features/login.feature:25)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate OpenAccount functionality" name="Validate OpenAccout with different account type" time="0.399">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given data is loaded for scenario "TC_001"..................................passed
+And user has launched the browser...........................................passed
+And user opens the application url..........................................passed
+And user enters the username and password...................................undefined
+And user clicks the login button............................................skipped
+And user is successfully logged into application with title.................skipped
+When the user click the OpenAccount link....................................skipped
+And user selects accout AccountType.........................................skipped
+And select an existing account..............................................skipped
+And user click on Open New Account button...................................skipped
+Then user can view the new account number...................................skipped
+And user is logged out......................................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Validate OpenAccount functionality" name="Validate OpenAccout with different account type 2" time="0.498">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given data is loaded for scenario "TC_002"..................................passed
+And user has launched the browser...........................................passed
+And user opens the application url..........................................passed
+And user enters the username and password...................................undefined
+And user clicks the login button............................................skipped
+And user is successfully logged into application with title.................skipped
+When the user click the OpenAccount link....................................skipped
+And user selects accout AccountType.........................................skipped
+And select an existing account..............................................skipped
+And user click on Open New Account button...................................skipped
+Then user can view the new account number...................................skipped
+And user is logged out......................................................skipped
+]]></failure>
+    </testcase>
+</testsuite>
